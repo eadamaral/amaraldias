@@ -1,238 +1,34 @@
+<!-- Portfólio -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio</title>
-  <!-- Font Roboto Flex -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Font Roboto Flex -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;400;700;900&display=swap" rel="stylesheet">
-  <!-- Awsome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Import Font Family Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Amaral Dias</title>
 </head>
 
 <body>
-
-  <!-- Navegação -->
-  <nav id="about-me">
-    <div class="container-nav flex-space-between">
-      <div class="logo flex">
-        <a href="#">
-          <i class="fa-brands fa-connectdevelop"></i> <span>Amaral Dias</a>
-      </div>
-      <ul>
-        <li><a href="#about-me">Sobre mim</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#skills">Experiências</a></li>
-        <li><a href="#contact-me">Contate-me</a></li>
-        <!-- remover link a hamburguer da class ul -->
-        <a href="#" id="hamburguer"><i class="fa-solid fa-bars"></i></a>
-      </ul>
-    </div>
-    <!-- Menu hamburguer mobile -->
-    <!-- <section id="nav-mobile">
-      <div class="container-nav-mobile hidden">
-        <ul>
-          <li><a href="#">Sobre mim</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Habilidades</a></li>
-          <li><a href="#">Contate-me</a></li>
-        </ul>
-      </div>
-    </section> -->
+<!-- nav -->
+  <nav>
+    <p>Navegação</p>
   </nav>
-
-  <!-- Cabeçalho -->
+  <!-- header -->
   <header>
-    <div class="container-header">
-      <div class="about-me">
-        <div class="text">
-          <!-- Animated text -->
-          <div id="texto"></div>
-          <!-- -->
-          <p><span>Desenvolvedor</span></p>
-
-          <h2>Front<span>end</span></h2>
-          <p><strong>Engenheiro de Software</strong>
-          <section class="social">
-            <div>
-              <a href="https://www.linkedin.com/in/amaralldias/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="https://www.instagram.com/amaraldiasbr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://github.com/eadamaral" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
-          </section>
-        </div>
-
-        <div class="photo flex-right">
-          <div>
-            <img src="https://assets.codepen.io/904699/internal/avatars/users/default.png" alt="Foto de Perfil">
-          </div>
-        </div>
-      </div>
+    <p>Conteúdo do topo</p>
   </header>
-
   <!-- main -->
   <main>
-    <!-- Projects -->
-    <div id="projects">
-      <div class="container">
-        <div class="title-bar">
-          <h2>Projetos<span>.</span></h2>
-        </div>
-        <section class="projects">
-          <div class="items">
-            <img src="https://cdn.dribbble.com/users/1542669/screenshots/9830967/media/7a8554c641b87c35444353963f755b4c.jpg?resize=768x576&vertical=center" alt="Imagem do layout">
-            <div class="buttons">
-              <a href="#">Visitar página</a>
-              <!-- projects icons -->
-              <div class="projects-icons">
-                <a href="#" class="icon" target="_blank"><i class="fa-brands fa-figma"></i></a>
-                <a href="#" class="icon" target="_blank"><i class="fa-brands fa-codepen"></i></a>
-              </div>
-
-            </div>
-            <div class="text">
-              <p>Landing Page: Portfólio</p>
-              <p class="tech">HTML5 | CSSS3 | JAVASCRIPT</p>
-            </div>
-          </div>
-          <div class="items">
-            <img src="https://cdn.dribbble.com/users/1626277/screenshots/18552562/media/451c59074459609f821864112ba1d452.jpg?resize=768x576&vertical=center" alt="">
-            <div class="buttons">
-              <a href="#">Visitar página</a>
-              <!-- projects icons -->
-              <div class="projects-icons">
-                <a href="#" class="icon" target="_blank"><i class="fa-brands fa-figma"></i></a>
-                <a href="#" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-            <div class="text">
-              <p>Landing page Hotel</p>
-              <p class="tech">REACT | TAILWIND CSS</p>
-            </div>
-          </div>
-          <div class="items">
-            <img src="https://cdn.dribbble.com/users/7635310/screenshots/17228699/media/ddec80cc768647c61d9e7852f034cad9.png?resize=768x576&vertical=center" alt="">
-            <div class="buttons">
-              <a href="#">Visitar página</a>
-              <!-- projects icons -->
-              <div class="projects-icons">
-                <a href="#" class="icon" target="_blank"><i class="fa-brands fa-figma"></i></a>
-                <a href="#" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
-              </div>
-            </div>
-            <div class="text">
-              <p>Landing Page: Hospital</p>
-              <p class="tech">HTML | CSS3 | JAVASCRIPT | REACT | SQL</p>
-            </div>
-          </div>
-        </section>
-        </section>
-      </div>
-    </div>
-    <!-- Skills -->
-    <div id="skills">
-      <div class="container">
-        <div class="title-bar">
-          <h2>Tecnologias<span>.</span></h2>
-        </div>
-        <section class="tecnologias">
-          <div>
-            <p><strong><i class="fa-solid fa-pen-nib"></i> Design</strong></p>
-            <p>Figma</p>
-            <p>CorelDRAW</p>
-            <p>CapCut</p>
-            <p>After Effects</p>
-          </div>
-          <!-- <hr> -->
-          <div>
-            <p><strong><i class="fa-solid fa-laptop-code"></i> Front-end</strong></p>
-            <p>Html 5</p>
-            <p>CSS 3</p>
-            <p>JavaScript</p>
-            <p>Tailwind CSS</p>
-          </div>
-          <!-- <hr> -->
-          <div>
-            <p><strong><i class="fa-solid fa-code"></i> Back-end</strong></p>
-            <p class="no">Node.Js</p>
-            <p>JavaScript</p>
-            <p class="no">SQL Server</p>
-            <p class="no">MongoDB</p>
-          </div>
-          <!-- <hr> -->
-          <div>
-            <p><strong><i class="fa-solid fa-toolbox"></i> Frameworks</strong></p>
-            <p class="no">React</p>
-            <p class="no">React Native</p>
-            <p class="no">Next.Js</p>
-          </div>
-        </section>
-        <!-- Experiências -->
-        <div class="title-bar">
-          <h2>Experiências<span>.</span></h2>
-        </div>
-        <section class="experiencias">
-          <div>
-            <p><strong><i class="fa-solid fa-bell-concierge"></i> Recepcionista de Hotel</strong></p>
-            <p>6 Anos de experiências no atendimento ao público no ramo hoteleiro.</Loren>
-            </p>
-          </div>
-          <div>
-            <p><strong><i class="fa-solid fa-pen-fancy"></i> Designer Gráfico</strong></p>
-            <p>5 Anos de experiências como Designer Gráfico. criando mídias digitais para impressão, serigrafia e internet.</Loren>
-            </p>
-          </div>
-          <div>
-            <p><strong><i class="fa-solid fa-chalkboard-user"></i> Suporte de T.I</strong></p>
-            <p>3 Mêses de experiências como Suporte de T.I. Onde fui contratado para implantar o novo sistema de gestão, fazer manutenção em computadores e dar suporte de usabilidade ao novo sistema.</Loren>
-            </p>
-          </div>
-
-        </section>
-      </div>
-    </div>
-    <!-- Contacte-me -->
-    <div id="contact-me">
-      <div class="container">
-        <div class="title-bar">
-          <h2>Contate-me<span>.</span></h2>
-        </div>
-        <section class="contact-me">
-          <form action="#">
-            <input type="text" placeholder="Seu nome" class="message">
-            <input type="email" placeholder="Seu E-mail. Ex: nome@email.com" class="message">
-            <input type="textarea" placeholder="Deixe sua mensagem que te retorno no Whatsapp!" class="button">
-            <button type="submit">Enviar</button>
-          </form>
-        </section>
-      </div>
-    </div>
+    <p>Conteúdo pricipal</p>
   </main>
-
-  <!-- Footer -->
+  <!-- footer -->
   <footer>
-    <div class="container-footer">
-      <p>&copy; 2024 Amaral Dias. Todos os direitos reservados.</p>
-    </div>
+    <p>Informações do rodapé</p>
   </footer>
-  <!-- Animation text -->
-  <script>
-    const texto = "Oi, eu sou Amaral Dias!👋";
-    const elemento = document.getElementById("texto");
-    let index = 0;
 
-    function digitar() {
-      if (index < texto.length) {
-        elemento.textContent += texto.charAt(index);
-        index++;
-        setTimeout(digitar, 100); // Tempo entre cada letra (100ms)
-      }
-    }
-    digitar(); // Inicia a animação
-  </script>
 </body>
 
 </html>
