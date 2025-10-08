@@ -4,12 +4,11 @@
   --fist-blue: #4374B5;
   --second-blue: #86BAFF;
   --third-blue: #D2E5FF;
-  --fouth-blue: #69b77b;
-  --five-blue: #FFE4C9;
+  --fouth-blue: #FFE4C9;
   /* black */
-  --fist-black: #1e1e1e;
-  --second-black: #242424;
-  --third-black: #303030; 
+  --fist-black: #171717;
+  --second-black: #1e1e1e;
+  --third-black: #242424;
   --fourth-black: #818181;
   /* white */
   --fist-white: #ffffff;
@@ -27,8 +26,143 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   font-family: 'Roboto', sans-serif;
-  font-size: var(--fist-white);
+  font-size: var(--default-font);
   background-color: var(--fist-black);
+  background-image: url(./assets/img/bg.png);
+  color: var(--fist-white);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+
+}
+
+.border {
+  border: solid 1px red;
+}
+
+/* Nav bar */
+nav {
+  height: 60px;
+
+  .logo {
+    gap: 0.5rem;
+  }
+
+  .logo p {
+    color: var(--second-blue);
+  }
+
+  .logo h2 {
+    color: var(--fouth-blue);
+  }
+
+  ul {
+    display: none;
+  }
+
+  .mobileMenu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-black);
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+  }
+
+  .mobileMenu a:hover {
+    background-color: var(--third-black);
+  }
+
+  a {
+    color: var(--fourth-black);
+  }
+
+  a:hover {
+    color: var(--second-blue);
+  }
+
+}
+
+header {
+  height: auto;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  div img {
+    width: 180px;
+    padding: 1rem 0;
+  }
+
+  h2 {
+    color: var(--fist-white);
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    color: var(--second-blue);
+    font-size: 2.6rem;
+    margin-top: -2.8rem;
+    font-weight: bold;
+  }
+
+  p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--fouth-blue);
+  }
+
+  .social {
+    display: flex;
+    gap: 1.4rem;
+
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      color: var(--fist-white);
+      background-color: var(--fist-blue);
+      border-radius: 100%;
+    }
+
+    a:hover {
+      background-color: var(--second-blue);
+      color: var(--fist-blue);
+    }
+  }
+
+  a {
+    color: var(--fourth-black)
+  }
+}
+
+main {
+  background-color: var(--second-black);
+  border-radius: 0.6rem;
+  height: 500px;
+}
+
+footer {
+  height: 160px;
 }

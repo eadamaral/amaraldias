@@ -7,28 +7,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Import Font Family Roboto -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+  <!-- Style Css -->
+  <link rel="stylesheet" href="style.css">
   <title>Amaral Dias</title>
 </head>
 
 <body>
-<!-- nav -->
+  <!-- nav -->
   <nav>
-    <p>Navegação</p>
+    <div class="container flex">
+      <div class="logo flex">
+        <p><i data-lucide="brain"></i></p>
+        <h2>Amaral Dias</h2>
+      </div>
+      <div class="mobileMenu">
+        <a href="#">
+          <i data-lucide="menu"></i>
+        </a>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
   </nav>
   <!-- header -->
   <header>
-    <p>Conteúdo do topo</p>
+    <div class="container flex">
+      <div>
+        <img src="./assets/img/avatar.png" alt="Foto do perfil">
+        <h2>Portfólio</h2>
+        <h3>Frontend</h3>
+        <p>Analista de Sistemas | Frontend| | React | React Native | Next.Js</p>
+        <section class="social">
+          <a href="#"><i data-lucide="github"></i></a>
+          <a href="#"><i data-lucide="linkedin"></i></a>
+          <a href="#"><i data-lucide="instagram"></i></a>
+        </section>
+        <a href="#"><i data-lucide="arrow-down"></i></a>
+      </div>
+
+    </div>
   </header>
   <!-- main -->
   <main>
-    <p>Conteúdo pricipal</p>
+    <div class="container flex">
+      <section>
+        <p>Conteúdo do Main</p>
+      </section>
+    </div>
   </main>
   <!-- footer -->
   <footer>
-    <p>Informações do rodapé</p>
+    <div class="container flex">
+      <p>Conteúdo do Footer</p>
+    </div>
   </footer>
-
+  <!-- O script da CDN do Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- O script para criar os ícones a partir dos atributos -->
+  <script>
+    // Substitui elementos com data-lucide por ícones SVG
+    lucide.createIcons();
+  </script>
 </body>
 
 </html>
