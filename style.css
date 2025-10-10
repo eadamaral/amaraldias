@@ -67,6 +67,7 @@ nav {
 
   .logo h2 {
     color: var(--fouth-blue);
+    font-family: Roboto Slab, serif;
   }
 
   ul {
@@ -160,7 +161,70 @@ header {
 main {
   background-color: var(--second-black);
   border-radius: 0.6rem;
-  height: 500px;
+  height: auto;
+
+  /* Projetos */
+  section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    padding: 2rem 0;
+  }
+
+  section span {
+    color: var(--second-blue);
+    ;
+  }
+
+  .projetos div {
+    padding: 0.6rem;
+    background-color: var(--third-black);
+    border-radius: 14px;
+  }
+
+  .projetos img {
+    width: 100%;
+    border-radius: 14px;
+  }
+
+  h3 {
+    
+    padding: 1rem 0;
+  }
+
+  .tecnologias {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .tecnologias p {
+    color: var(--fourth-black)
+  }
+.tecnologias .botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+  .tecnologias .botoes a {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem;
+    color: var(--second-black);
+    background-color: var(--fourth-black);
+    border-radius: 100%;
+  }
+.tecnologias .botoes a:hover{
+    background-color: var(--second-blue);
+    color: var(--fist-blue);
 }
 
 footer {
