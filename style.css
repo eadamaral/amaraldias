@@ -257,38 +257,63 @@ main {
     }
 
     .info .tech {
-
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       gap: 1rem;
     }
+
     .info .tech p {
+      text-align: center;
+      display: flex;
       align-items: center;
       justify-content: center;
-  
-
+      flex-direction: column;
+      gap: 0.6rem;
+      color: var(--fist-white);
+      font-size: 0.8rem;
     }
-    .info .experience div{
+
+    .info .tech span {
+      display: flex;
+      gap: 0.6rem;
+      flex-direction: column;
+      align-items: center;
+      color: var(--second-blue);
+    }
+
+
+    .info .experience div {
       margin: 1rem;
     }
-     .photo {
-      display: flex; 
+
+    .photo {
+      display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 1.4rem;
       width: 100%;
-    
+      position: relative;
+
       a {
-        text-decoration: none;
+        top: 80%;
         display: flex;
+        text-decoration: none;
         align-items: center;
         border-radius: 4px;
         padding: 0.6rem 1.4rem;
         background-color: var(--fist-blue);
         color: var(--fist-white);
-        margin-top: -4rem;
+        position: absolute;
+        z-index: 2;
+        gap: 0.4rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       }
+
+      a:hover {
+        color: var(--second-blue);
+      }
+
       p {
         color: var(--fist-white);
       }
