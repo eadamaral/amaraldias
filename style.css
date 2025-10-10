@@ -11,8 +11,8 @@
   --third-black: #242424;
   --fourth-black: #818181;
   /* white */
-  --fist-white: #ffffff;
-  --second-white: #f1f1f1;
+  --fist-white: #f1f1f1;
+  --second-white: #ffffff;
   /* outras cores */
   --whatsapp-color: #3BC24D;
   /* Font-size */
@@ -162,7 +162,8 @@ main {
   background-color: var(--second-black);
   border-radius: 0.6rem;
   height: auto;
-margin: 0 1rem;
+  margin: 0 1rem;
+
   /* Projetos */
   section {
     display: flex;
@@ -172,10 +173,11 @@ margin: 0 1rem;
     gap: 1.4rem;
   }
 
+  /* Titulo das páginas */
   section h2 {
     font-size: 2rem;
     font-family: 'Roboto Slab', serif;
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 
   section span {
@@ -195,7 +197,7 @@ margin: 0 1rem;
   }
 
   h3 {
-    
+
     padding: 1rem 0;
   }
 
@@ -209,12 +211,14 @@ margin: 0 1rem;
   .tecnologias p {
     color: var(--fourth-black)
   }
-.tecnologias .botoes{
+
+  .tecnologias .botoes {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.6rem;
-}
+  }
+
   .tecnologias .botoes a {
     display: flex;
     align-items: center;
@@ -223,11 +227,81 @@ margin: 0 1rem;
     background-color: var(--fourth-black);
     border-radius: 100%;
   }
-.tecnologias .botoes a:hover{
+
+  .tecnologias .botoes a:hover {
     background-color: var(--second-blue);
     color: var(--fist-blue);
-}
+  }
 
-footer {
-  height: 160px;
+  .about {
+
+    /* Info */
+    .info p {
+      text-align: justify;
+    }
+
+    .info strong {
+      margin: 1.4rem 0;
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+      padding: 0.4rem 1rem;
+      border-radius: 18px;
+      background-color: var(--fist-black);
+      color: var(--fouth-blue);
+    }
+
+    .info strong p {
+      color: var(--fouth-blue);
+
+    }
+
+    .info .tech {
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+    .info .tech p {
+      align-items: center;
+      justify-content: center;
+  
+
+    }
+    .info .experience div{
+      margin: 1rem;
+    }
+     .photo {
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1.4rem;
+      width: 100%;
+    
+      a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        padding: 0.6rem 1.4rem;
+        background-color: var(--fist-blue);
+        color: var(--fist-white);
+        margin-top: -4rem;
+      }
+      p {
+        color: var(--fist-white);
+      }
+    }
+
+    /* Photo */
+    .photo img {
+      width: 100%;
+      border-radius: 12px;
+    }
+  }
+
+  footer {
+    height: 160px;
+  }
 }
