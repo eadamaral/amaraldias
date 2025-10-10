@@ -162,13 +162,14 @@ main {
   background-color: var(--second-black);
   border-radius: 0.6rem;
   height: auto;
-
+margin: 0 1rem;
   /* Projetos */
   section {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     width: 100%;
+    gap: 1.4rem;
   }
 
   section h2 {
