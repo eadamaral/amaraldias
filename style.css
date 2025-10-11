@@ -27,13 +27,30 @@
 }
 
 body,
-html {
+html,
+input,
+button,
+select,
+textarea {
   font-family: 'Roboto', sans-serif;
   font-size: var(--default-font);
   background-color: var(--fist-black);
-  background-image: url(./assets/img/bg.png);
+  /* background-image: url(./assets/img/bg.png); */
   color: var(--fist-white);
 }
+
+/* nav,
+header,
+main,
+footer {
+
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 1rem;
+  margin: 0 auto;
+
+} */
 
 .container {
   display: flex;
@@ -233,9 +250,9 @@ main {
     color: var(--fist-blue);
   }
 
+  /* Aboute --------------------------------  */
   .about {
 
-    /* Info */
     .info p {
       text-align: justify;
     }
@@ -322,11 +339,148 @@ main {
     /* Photo */
     .photo img {
       width: 100%;
-      border-radius: 12px;
+      border-radius: 4px;
     }
   }
 
-  footer {
-    height: 160px;
+  /* Contate-me ------------------------------*/
+
+  .contacte-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    form input,
+    textarea,
+    select,
+    button {
+      width: 100%;
+      height: 55px;
+      border-radius: 6px;
+      border: solid 1px var(--fourth-black);
+      padding: 0.4rem 1rem;
+      background-color: var(--second-black);
+    }
+
+    form textarea {
+      height: 120px;
+      resize: none;
+      padding-top: 0.8rem;
+    }
+
+    form p {
+      font-size: 0.8rem;
+      color: var(--second-blue);
+      padding: 0.6rem 0;
+      margin: 0 auto;
+    }
+
+    form a {
+      display: flex;
+      margin: 0 auto;
+      text-decoration: none;
+      align-items: center;
+      border-radius: 4px;
+      padding: 0.6rem 1.4rem;
+      background-color: var(--fist-blue);
+      color: var(--fist-white);
+      gap: 0.4rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    form a:hover {
+      color: var(--second-blue);
+    }
+
+    /* Whatsapp Banner */
+
+    .whatsapp {
+      /* margin: 0 auto; */
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        /* max-height: 426px; */
+        border-radius: 4px;
+        object-fit: cover;
+      }
+
+      a {
+        display: flex;
+        /* margin: 0 auto; */
+        text-decoration: none;
+        align-items: center;
+        border-radius: 4px;
+        padding: 0.6rem 1.4rem;
+        background-color: var(--whatsapp-color);
+        color: var(--fist-white);
+        gap: 0.4rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: absolute;
+        z-index: 3;
+        margin-top: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+footer {
+  height: 120px;
+
+  section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    .logo {
+      display: flex;
+      gap: 0.6rem;
+    }
+
+    .logo p {
+      color: var(--second-blue);
+      padding: 1rem 0;
+    }
+
+    .logo h2 {
+      font-family: roboto slab, serif;
+      color: var(--fouth-blue);
+    }
+
+    .social {
+      display: flex;
+      gap: 1.4rem;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        color: var(--fist-white);
+        background-color: var(--fist-blue);
+        border-radius: 100%;
+      }
+    }
+
+    span {
+      padding: 1rem 0;
+    }
   }
 }
