@@ -6,10 +6,11 @@
   --third-blue: #D2E5FF;
   --fouth-blue: #FFE4C9;
   /* black */
-  --fist-black: #171717;
+  --fist-black: #FBA418;
   --second-black: #1e1e1e;
   --third-black: #242424;
-  --fourth-black: #818181;
+  --fourth-black: #c8c8c8;
+  --five-color: #EA9409;
   /* white */
   --fist-white: #f1f1f1;
   --second-white: #ffffff;
@@ -75,16 +76,22 @@ nav {
   height: 60px;
 
   .logo {
-    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
   }
 
   .logo p {
-    color: var(--second-blue);
+    color: var(--second-black);
   }
 
   .logo h2 {
-    color: var(--fouth-blue);
-    font-family: Roboto Slab, serif;
+    color: var(--second-black);
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 800;
+    letter-spacing: -1px;
+    font-size: 1.6rem;
   }
 
   ul {
@@ -95,9 +102,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--second-black);
-    padding: 0.4rem;
-    border-radius: 0.4rem;
+    background-color: var(--five-color);
+    padding: 0.3rem;
+    border-radius: 2px;
   }
 
   .mobileMenu a:hover {
@@ -105,11 +112,11 @@ nav {
   }
 
   a {
-    color: var(--fourth-black);
+    color: var(--fist-white);
   }
 
   a:hover {
-    color: var(--second-blue);
+    color: var(--fist-black);
   }
 
 }
@@ -133,10 +140,12 @@ header {
     color: var(--fist-white);
     font-size: 4rem;
     font-weight: 800;
+    margin-top: -4rem;
+
   }
 
   h3 {
-    color: var(--second-blue);
+    color: var(--second-black);
     font-size: 2.6rem;
     margin-top: -2.8rem;
     font-weight: 800;
@@ -145,7 +154,8 @@ header {
   p {
     text-align: center;
     font-size: 0.8rem;
-    color: var(--fouth-blue);
+    color: var(--second-black);
+    font-family: 'Roboto Mono', monospace;
   }
 
   .social {
@@ -157,29 +167,28 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 42px;
-      height: 42px;
+      width: 36px;
+      height: 36px;
       color: var(--fist-white);
-      background-color: var(--fist-blue);
+      background-color: var(--five-color);
       border-radius: 100%;
+      padding: 0.4rem;
     }
 
     a:hover {
-      background-color: var(--second-blue);
-      color: var(--fist-blue);
+      background-color: var(--second-black);
+      color: var(--five-color);
     }
   }
 
   a {
-    color: var(--fourth-black)
+    color: var(--second-black)
   }
 }
 
 main {
   background-color: var(--second-black);
-  border-radius: 0.6rem;
   height: auto;
-  margin: 0 1rem;
 
   /* Projetos */
   section {
@@ -192,30 +201,25 @@ main {
 
   /* Titulo das páginas */
   section h2 {
-    font-size: 2rem;
-    font-family: 'Roboto Slab', serif;
+    font-size: 1.6rem;
+    font-family: 'Roboto Flex', sans-serif;
     padding: 1rem 0;
   }
 
-  section span {
-    color: var(--second-blue);
-    ;
-  }
-
   .projetos div {
-    padding: 0.6rem;
+    padding: 0.8rem;
     background-color: var(--third-black);
-    border-radius: 14px;
+    border-radius: 2px;
   }
 
   .projetos img {
     width: 100%;
-    border-radius: 14px;
+    border-radius: 2px;
   }
 
   h3 {
-
-    padding: 1rem 0;
+color: var(--fist-black);
+    padding: 1rem 0.6rem;
   }
 
   .tecnologias {
@@ -226,7 +230,7 @@ main {
   }
 
   .tecnologias p {
-    color: var(--fourth-black)
+    color: var(--fourth-black);
   }
 
   .tecnologias .botoes {
@@ -240,14 +244,14 @@ main {
     display: flex;
     align-items: center;
     padding: 0.4rem;
-    color: var(--second-black);
-    background-color: var(--fourth-black);
-    border-radius: 100%;
+    color: var(--fouth-black);
+    background-color: var(--second-black);
+    border-radius: 2px;
   }
 
   .tecnologias .botoes a:hover {
-    background-color: var(--second-blue);
-    color: var(--fist-blue);
+    background-color: var(--five-color);
+    color: var(--second-black);
   }
 
   /* Aboute --------------------------------  */
@@ -255,6 +259,8 @@ main {
 
     .info p {
       text-align: justify;
+      line-height: 1.6rem;
+      color: var(--fist-white);
     }
 
     .info strong {
@@ -263,13 +269,11 @@ main {
       gap: 0.6rem;
       align-items: center;
       padding: 0.4rem 1rem;
-      border-radius: 18px;
-      background-color: var(--fist-black);
-      color: var(--fouth-blue);
+      color: var(--fist-black);
     }
 
     .info strong p {
-      color: var(--fouth-blue);
+      color: var(--fist-white);
 
     }
 
@@ -277,7 +281,7 @@ main {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      gap: 1rem;
+      gap: 1.6rem;
     }
 
     .info .tech p {
@@ -296,7 +300,7 @@ main {
       gap: 0.6rem;
       flex-direction: column;
       align-items: center;
-      color: var(--second-blue);
+      color: var(--fist-black);
     }
 
 
@@ -317,10 +321,10 @@ main {
         display: flex;
         text-decoration: none;
         align-items: center;
-        border-radius: 4px;
+        border-radius: 2px;
         padding: 0.6rem 1.4rem;
-        background-color: var(--fist-blue);
-        color: var(--fist-white);
+        background-color: var(--fist-black);
+        color: var(--second-black);
         position: absolute;
         z-index: 2;
         gap: 0.4rem;
@@ -328,18 +332,15 @@ main {
       }
 
       a:hover {
-        color: var(--second-blue);
-      }
-
-      p {
-        color: var(--fist-white);
+        color: var(--fist-black);
+        background-color: var(--second-black) ;
       }
     }
 
     /* Photo */
     .photo img {
       width: 100%;
-      border-radius: 4px;
+      border-radius: 2px;
     }
   }
 
@@ -377,7 +378,7 @@ main {
 
     form p {
       font-size: 0.8rem;
-      color: var(--second-blue);
+      color: var(--fist-white);
       padding: 0.6rem 0;
       margin: 0 auto;
     }
@@ -389,20 +390,19 @@ main {
       align-items: center;
       border-radius: 4px;
       padding: 0.6rem 1.4rem;
-      background-color: var(--fist-blue);
-      color: var(--fist-white);
+      background-color: var(--five-color);
+      color: var(--second-black);
       gap: 0.4rem;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     form a:hover {
-      color: var(--second-blue);
+      background-color: var(--fist-black);
     }
 
     /* Whatsapp Banner */
 
     .whatsapp {
-      /* margin: 0 auto; */
       display: flex;
       flex-direction: column;
       position: relative;
@@ -411,8 +411,7 @@ main {
 
       img {
         width: 100%;
-        /* max-height: 426px; */
-        border-radius: 4px;
+        border-radius: 2px;
         object-fit: cover;
       }
 
@@ -421,7 +420,7 @@ main {
         /* margin: 0 auto; */
         text-decoration: none;
         align-items: center;
-        border-radius: 4px;
+        border-radius: 2px;
         padding: 0.6rem 1.4rem;
         background-color: var(--whatsapp-color);
         color: var(--fist-white);
@@ -454,13 +453,16 @@ footer {
     }
 
     .logo p {
-      color: var(--second-blue);
+      color: var(--second-black);
       padding: 1rem 0;
     }
 
     .logo h2 {
-      font-family: roboto slab, serif;
-      color: var(--fouth-blue);
+    color: var(--second-black);
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 800;
+    letter-spacing: -1px;
+    font-size: 1.6rem;
     }
 
     .social {
@@ -468,19 +470,21 @@ footer {
       gap: 1.4rem;
 
       a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 42px;
-        height: 42px;
-        color: var(--fist-white);
-        background-color: var(--fist-blue);
-        border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      color: var(--fist-white);
+      background-color: var(--five-color);
+      border-radius: 100%;
+      padding: 0.4rem;
       }
     }
 
     span {
       padding: 1rem 0;
+      color: var(--second-black); 
     }
   }
 }
