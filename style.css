@@ -122,7 +122,7 @@ nav {
 }
 
 header {
-  height: 95vh;
+  height: 100vh;
   
 
   div {
@@ -143,14 +143,14 @@ header {
     color: var(--fist-white);
     font-size: 4rem;
     font-weight: 800;
-    margin-top: -6rem;
+    margin-top: -7rem;
 
   }
 
   h3 {
     color: var(--second-black);
     font-size: 2.6rem;
-    margin-top: -5.4rem;
+    margin-top: -5.6rem;
     font-weight: 800;
   }
 
@@ -185,6 +185,7 @@ header {
   }
 
   a {
+    padding: 1.6rem 0;
     color: var(--second-black)
   }
 }
