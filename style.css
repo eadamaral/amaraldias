@@ -59,6 +59,7 @@ footer {
   max-width: 1200px;
   padding: 1rem;
   margin: 0 auto;
+  /* height: auto; */
 }
 
 .flex {
@@ -124,12 +125,12 @@ nav {
 header {
   
   min-height: calc(100vh - 68px);
-  
+  min-height: calc(100dvh - 68px); /* usado nos navegadores que suportam dvh */
   overflow: hidden;
 
   div {
     display: flex;
-    height: 100%;
+    height: calc(100vh - 68px);
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
