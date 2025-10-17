@@ -124,13 +124,13 @@ nav {
 
 header {
   
-  min-height: 80dvh;
+  min-height: 90dvh;
   /* min-height: calc(100dvh - 68px);
   overflow: hidden; */
 
   div {
     display: flex;
-    height: 80vh;
+    height: 90dvh;
     /* height: calc(100vh - 68px);
     height: calc(100dvh - 68px);
     overflow: hidden; */
