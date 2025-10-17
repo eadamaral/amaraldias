@@ -123,8 +123,9 @@ nav {
 
 header {
   
-  height: calc(100vh - 68px);
-  height: calc(100dvh - 68px); /* usado nos navegadores que suportam dvh */
+  min-height: calc(100vh - 68px);
+  
+  overflow: hidden;
 
   div {
     display: flex;
